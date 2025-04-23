@@ -2,7 +2,7 @@ import Header from "./components/mainSections/Header";
 import HeroSection from "./components/sections/HeroSection";
 import Navigation from "./components/sections/Navigation";
 import Page from "./components/mainSections/Page";
-import TwitterLove from "./components/sections/twitterLove";
+import TwitterLove from "./components/sections/TwitterLove";
 import TwitterTestiminials from "./components/mainSections/TwitterTestiminials";
 import Companies from "./components/sections/Comapanies";
 import CohortLiveClassesAndStudentsFeedBAck from "./components/mainSections/CohortLiveClassesAndStudentsFeedBAck";
