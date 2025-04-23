@@ -33,14 +33,7 @@ export default function FreeApi() {
 
         <div className="flex-1 flex justify-center w-full">
           <div className='border border-orange-500 rounded-xl md:rounded-2xl overflow-hidden p-1.5 md:p-2 bg-black/20 w-full max-w-lg aspect-video'> 
-          <iframe
-            className="rounded-3xl w-[20rem] md:w-[36rem] h-64 md:h-80"
-            src="https://www.youtube.com/embed/xJq0EQMFGyg?si=b2L2Tuho91t573Yt"
-            title="FreeAPI Overview"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xJq0EQMFGyg?si=Qqfm_TMj-Pin3BqO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
 
