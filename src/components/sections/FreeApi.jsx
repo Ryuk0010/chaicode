@@ -13,7 +13,7 @@ export default function FreeApi() {
 
         <div className="flex-1 text-center md:text-left mb-10 md:mb-0 w-full">
           <div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-200 leading-tight sm:leading-snug mb-4"> {/* Changed text color */}
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-200 leading-tight sm:leading-snug mb-4">
               Unlock Your Potential<br />with Our API Hub
             </h2>
             <p className="text-gray-400 text-sm sm:text-base mb-6 max-w-md mx-auto md:mx-0">
@@ -32,7 +32,7 @@ export default function FreeApi() {
         </div>
 
         <div className="flex-1 flex justify-center w-full">
-          <div className='border border-orange-500 rounded-xl md:rounded-2xl overflow-hidden p-1.5 md:p-2 bg-black/20 w-full max-w-lg aspect-video'> {/* Added max-width and aspect ratio */}
+          <div className='border border-orange-500 rounded-xl md:rounded-2xl overflow-hidden p-1.5 md:p-2 bg-black/20 w-full max-w-lg aspect-video'> 
             <iframe
               className="rounded-lg md:rounded-xl w-full h-full"
               src="https://youtu.be/xJq0EQMFGyg?si=_B0k64jrXTDyJN-j"
