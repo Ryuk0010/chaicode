@@ -41,7 +41,6 @@ export default function UdemyCourses() {
 
   return (
     <div className="max-w-[100rem] mx-auto flex flex-col items-center px-4 md:px-8">
-  {/* Heading Section */}
   <div className="text-center">
     <h1 className="text-5xl md:text-8xl text-primary-400 font-semibold py-4">Udemy</h1>
     <h3 className="text-xl md:text-3xl text-primary-700 font-semibold py-5">
@@ -49,7 +48,6 @@ export default function UdemyCourses() {
     </h3>
   </div>
 
-  {/* Slider Section */}
   <div className="w-full py-10">
     <Slider {...settings}>
       {UdemyDetails.map((course) => (

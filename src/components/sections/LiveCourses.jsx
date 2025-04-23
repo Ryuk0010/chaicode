@@ -19,23 +19,24 @@ export default function LiveCourses() {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1210,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
         },
       },
+  
     ],
   };
 
   return (
     <div>
-      <div className="justify-items-center container mx-auto px-4">
+      <div className="justify-items-center container mx-4 px-4">
         <h1 className="text-4xl sm:text-6xl lg:text-8xl text-primary-400 font-semibold">
           Cohorts
         </h1>
@@ -49,7 +50,7 @@ export default function LiveCourses() {
         <div className="absolute right-[14rem] top-1/2 -translate-y-1/2 w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-primary-800 rounded-full z-0 blur-3xl opacity-20"></div>
         <div className="absolute left-[34rem] top-1/2 -translate-y-1/2 w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-primary-700 rounded-full z-0 blur-3xl opacity-40"></div>
 
-        <div className="w-full max-w-7xl px-4 py-12 z-10">
+        <div className="w-full max-w-6xl py-12 z-10">
           <Slider {...settings}>
             {CoursesDetails.map((data, index) => (
               <div key={index} className="px-2 sm:px-4">

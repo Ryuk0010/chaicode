@@ -10,7 +10,7 @@ export default function HeroSection() {
 
       <div className="px-8 py-20 w-full">
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-primary-700 border-2 rounded-full px-4 py-2 glow">
+          <p className="text-lg text-primary-700 border-2 rounded-full px-2 py-2 glow text-center">
             Trusted By 1.5M Code Learners
           </p>
 

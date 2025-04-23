@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LiveCoursesCard({ link, discount, originalPrice, discountedPrice, name, details, buy }) {
   return (
-    <div className="w-96 bg-gradient-to-br my-2 from-gray-800 via-gray-900 to-black text-white rounded-2xl overflow-hidden shadow-2xl duration-300 ring-2 ring-gray-700 hover:ring-orange-500 mx-auto">
+    <div className="w-84 bg-gradient-to-br my-2 from-gray-800 via-gray-900 to-black text-white rounded-2xl overflow-hidden shadow-2xl duration-300 ring-2 ring-gray-700 hover:ring-orange-500 mx-auto">
       <img src={link} alt="Course Thumbnail" className="w-full py-2 px-2 rounded-2xl h-56 object-cover" />
       
       <div className="p-5 flex flex-col gap-4 h-[20rem] justify-between">

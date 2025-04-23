@@ -4,7 +4,7 @@ import { CohortBenifitsData } from "../../utils/CohortBenifitsData";
 
 export default function CohortBenifits() {
   return (
-    <div className=" my-32">
+    <div className="px-2 my-32">
         <div className="container mx-auto py-12 text-center">
         <h1 className="text-5xl md:text-7xl text-primary-400 font-semibold">
           Key Benefits of Cohorts

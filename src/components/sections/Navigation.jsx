@@ -4,44 +4,42 @@ import { NavContent } from '../../utils/Content'
 
 export default function Navigation() {
   return (
-    <nav className="text-primary-50 auto flex justify-between max-w-[90rem] container mx-auto px-15  text-lg/8 font-light py-2 md:py-8">
-      <a href='#'>
-        <div className='text-orange-500 flex items-center '>
-          <img className='w-12 h-12' src={cupLogo} alt="Cup Logo" />
-          <p className="text-xl font-bold ">ChaiCode</p>
-        </div>
-      </a>
+<nav className="text-primary-50 flex flex-wrap items-center justify-between max-w-[90rem] container mx-auto px-4 text-lg/8 font-light py-2 md:py-8">
+  <a href="#" className="flex items-center text-orange-500 mb-2 md:mb-0">
+    <img className="w-10 h-10 md:w-12 md:h-12" src={cupLogo} alt="Cup Logo" />
+    <p className="ml-2 text-xl font-bold">ChaiCode</p>
+  </a>
 
+  <ul className="hidden md:flex items-center gap-x-6">
+    {NavContent.map((link) => (
+      <li key={link.id} className="flex items-center gap-1">
+        <a
+          className="hover:text-primary-300 transition-all"
+          href={link.href}
+          target={link.link === "Udemy" ? "_blank" : "_self"}
+          rel={link.link === "Udemy" ? "noopener noreferrer" : undefined}
+        >
+          {link.link}
+        </a>
+        {link.link === "Cohorts" && <LiveBlinker />}
+      </li>
+    ))}
+  </ul>
 
+  <div className="mb-2 md:mb-0">
+    <button
+      onClick={() =>
+        (window.location.href =
+          "https://courses.chaicode.com/learn/account/signin")
+      }
+      className="bg-orange-500 text-white text-lg/8 font-medium border border-orange-500 rounded-full px-4 py-1 
+      hover:bg-orange-100 hover:text-orange-500 transition-all cursor-pointer glow glow-hover"
+    >
+      Login
+    </button>
+  </div>
+</nav>
 
-      <ul className="hidden md:flex items-center gap-x-6">
-        {NavContent.map((link) => (
-          <li key={link.id} className="flex items-center gap-1">
-            <a
-              className="hover:text-primary-300 transition-all"
-              href={link.href}
-              target={link.link === "Udemy" ? "_blank" : "_self"}
-              rel={link.link === "Udemy" ? "noopener noreferrer" : undefined}
-            >
-              {link.link}
-            </a>
-            {link.link === "Cohorts" && <LiveBlinker />}
-          </li>
-        ))}
-      </ul>
-
-
-      
-      <div>
-      <button
-        onClick={() => window.location.href = "https://courses.chaicode.com/learn/account/signin"}
-        className="bg-orange-500 text-white text-lg/8 font-medium border-1 border-orange-500 rounded-full px-4 py-1 
-        hover:bg-orange-100 hover:text-orange-500 transition-all cursor-pointer glow glow-hover">
-        Login
-      </button>
-
-      </div>
-    </nav>
   )
 }
 
