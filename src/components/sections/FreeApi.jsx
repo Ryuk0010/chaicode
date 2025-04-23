@@ -35,7 +35,7 @@ export default function FreeApi() {
           <div className='border border-orange-500 rounded-xl md:rounded-2xl overflow-hidden p-1.5 md:p-2 bg-black/20 w-full max-w-lg aspect-video'> {/* Added max-width and aspect ratio */}
             <iframe
               className="rounded-lg md:rounded-xl w-full h-full"
-              src="https://www.youtube.com/embed/xJq0EQMFGyg?si=b2L2Tuho91t573Yt"
+              src="https://youtu.be/xJq0EQMFGyg?si=_B0k64jrXTDyJN-j"
               title="FreeAPI Overview"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
