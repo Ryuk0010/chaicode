@@ -1,6 +1,5 @@
 import React from 'react'
 import discordlogo from "../../assets/ChatGPT_discord.png"
-import { MessageSquare } from 'lucide-react'
 
 export default function DiscordSection() {
 

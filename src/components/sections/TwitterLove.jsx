@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { twitterData } from "../../utils/twitterTestimonials"; 
+import { twitterData } from "../../utils/TwitterTestimonials"; 
 import TweetCard from "../ui/TweetCard";
 
 export default function TwitterLove() {
