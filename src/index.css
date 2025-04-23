@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #ecfcfd;
+  --color-primary-75: #dafafa;
+  --color-primary-100: #c7f7f8;
+  --color-primary-150: #b4f5f5;
+  --color-primary-200: #a2f2f3;
+  --color-primary-250: #8feff1;
+  --color-primary-300: #7cedee;
+  --color-primary-350: #69eaec;
+  --color-primary-400: #57e8e9;
+  --color-primary-500: #44e5e7;
+  --color-primary-600: #3dced0;
+  --color-primary-700: #36b7b9;
+  --color-primary-800: #30a0a2;
+  --color-primary-900: #29898b;
+  --color-primary-1000: #227374;
+  --color-primary-1100: #1b5c5c;
+  --color-primary-1200: #144545;
+  --color-primary-1300: #0e2e2e;
+  --color-primary-1350: #0a2323;
+  --color-primary-1400: #071717;
+  --color-primary-1450: #030909;
+  --color-primary-1500: #000000;
+  
+  --color-blue-1400: #0a0f1a;
+
+  --font-sans: "Poppins", sans-serif;
+
+  --color-primary-glow: rgba(255, 229, 200, 0.3);
+  --color-primary-50-glow: rgba(236, 252, 253, 0.2);
+  --color-secondary-glow: rgba(0, 95, 107, 0.9)
+
+  
+
+}
+
+.bg-gradient-to-bottom{
+  @apply bg-[linear-gradient(to_bottom,var(--color-primary-1500),var(--color-primary-1300))];
+}
+.bg-gradient-to-bottom1{
+  @apply bg-[linear-gradient(to_bottom,var(--color-primary-1300),var(--color-primary-1500))];
+}
+.bg-gradient-to-bottom2{
+  @apply bg-[linear-gradient(to_bottom,var(--color-primary-1500),var(--color-primary-1350))];
+}
+.bg-gradient-to-bottom3{
+  @apply bg-[linear-gradient(to_bottom,var(--color-primary-1350),var(--color-primary-1500))];
+}
+.transition-properties{
+  @apply transition-all duration-300;
+}
+
+.glow{
+  @apply drop-shadow-[0px_0px_25px_var(--color-primary-glow)]
+}
+.glow-big{
+  @apply drop-shadow-[0px_0px_50px_var(--color-secondary-glow)]
+}
+
+.glow-hover{
+  @apply hover:drop-shadow-[0px_0px_25px_var(--color-primary-50-glow)]
+}
+
+.live-blinker {
+  @apply relative flex size-3;
+}
+
+.live-blinker-ping {
+  @apply absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500 opacity-100;
+}
+
+.live-blinker-dot {
+  @apply relative inline-flex size-3 rounded-full bg-sky-500;
+}
+
+
+
+.slick-dots li button:before {
+  font-size: 12px;              
+  color: rgb(197, 197, 197) !important;
+  opacity: 1;       
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;      
+}
+
+.slick-dots li button:before {
+  transition: color 0.3s ease-in-out;
+}
+
+.slick-dots li:hover button:before {
+  color: #fff !important; 
+}
+
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 3s linear infinite;
+}
