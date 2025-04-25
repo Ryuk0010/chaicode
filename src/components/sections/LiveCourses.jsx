@@ -36,8 +36,8 @@ export default function LiveCourses() {
 
   return (
     <div>
-      <div className="justify-items-center container mx-4 px-4">
-        <h1 className="text-4xl sm:text-6xl lg:text-8xl text-primary-400 font-semibold">
+      <div className="justify-items-center container mx-auto">
+        <h1 className="text-4xl sm:text-6xl lg:text-8xl text-primary-400 font-semibold ">
           Cohorts
         </h1>
         <h3 className="text-xl sm:text-2xl md:text-3xl text-primary-700 font-semibold py-2">
@@ -46,7 +46,7 @@ export default function LiveCourses() {
       </div>
 
       <div className="w-full flex justify-center relative overflow-x-hidden">
-        {/* Blurred circles */}
+
         <div className="absolute right-[14rem] top-1/2 -translate-y-1/2 w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-primary-800 rounded-full z-0 blur-3xl opacity-20"></div>
         <div className="absolute left-[34rem] top-1/2 -translate-y-1/2 w-[300px] md:w-[400px] h-[300px] md:h-[400px] bg-primary-700 rounded-full z-0 blur-3xl opacity-40"></div>
 
