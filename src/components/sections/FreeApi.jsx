@@ -36,13 +36,7 @@ export default function FreeApi() {
             className="border border-orange-500 rounded-xl md:rounded-2xl overflow-hidden p-1.5 md:p-2 bg-black/20 w-full max-w-lg"
             style={{ aspectRatio: "16 / 9" }}
           >
-            <iframe
-              src="https://www.youtube.com/embed/xJq0EQMFGyg"
-              width="100%"
-              height="100%"
-              allowFullScreen
-              className="w-full h-full"
-            ></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xJq0EQMFGyg?si=YgJEzkMjjnfgmMAD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
 

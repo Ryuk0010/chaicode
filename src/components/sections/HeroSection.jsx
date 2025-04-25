@@ -44,15 +44,7 @@ export default function HeroSection() {
           </div>
 
           <div className="w-full max-w-5xl aspect-[14/8]">
-            <iframe
-              className="w-full h-full rounded-xl shadow-lg"
-              src="https://www.youtube.com/embed/yG8JMlldoCE?si=pCIQ4Bl4TQVvK-Kw"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          <iframe className='w-full h-full rounded-xl shadow-lg' width="560" height="315" src="https://www.youtube.com/embed/yG8JMlldoCE?si=mhz-kyuK7p69NJ_f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
